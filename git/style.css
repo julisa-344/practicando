@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: lightsalmon;
+    display: grid;
+    place-items: center;
+}
+div {
+    width: 200px;
+    padding: 20px;
+    background-color: lightskyblue;
+}
+h1 {
+    padding: 15px;
+    background-color: aquamarine;
+    color:lightsalmon;
+}
