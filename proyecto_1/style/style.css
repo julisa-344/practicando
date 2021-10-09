@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+  background-color: #FFE3B3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-weight: bold;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 32px;
+}
+h2 {
+  margin-bottom: 16px;
+  font-size: 2.4rem;
+  color: #323635;
+  font-weight: bold;
+}
+p{
+  font-size: 1.6rem;
+  line-height: 26px;
+  color: #747573;
+}
+
+/* dando estilos al header */
+
+header{
+  height: 100px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #30B18B;
+  color: #FFE3B3;
+}
+header span{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+header ul {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+header li {
+  font-size: 1.8rem;
+}
+
+/* dando estilos al main  */
+
+main {
+  padding: 0 32px;
+}
+section {
+  margin-top: 60px;
+}
+section ul {
+  padding: 32px;
+  list-style: circle;
+}
+section ul li {
+  color: #747573;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin:  32px 0;
+}
+
+
+/* formulario */
+
+form [type="text"]{
+  width: 95%;
+  padding: 32px;
+  margin-top: 32px;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid #30B18B;
+  border-radius: 10px;
+  background-color: transparent;
+}
+textarea{
+  width: 95%;
+  padding: 32px;
+  margin-top: 32px;
+  font-size: 1.6rem;
+  border: none;
+  border: 1px solid #30B18B;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+
+button {
+  padding: 20px 32px;
+  margin: 32px 0 100px 0;
+  background: rgb(120,207,103);
+  background: linear-gradient(90deg, rgba(120,207,103,1) 0%, rgba(43,171,132,1) 100%);
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  box-shadow: 7px 7px 10px 1px #30B18B;
+  cursor: pointer;
+}
+button:active {
+  color: #747573;
+}
+
+/* dando estilos al footer */
+
+footer {
+  height: 100px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #30B18B;
+}
