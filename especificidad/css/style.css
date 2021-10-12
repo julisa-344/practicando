@@ -62,7 +62,7 @@ main {
     margin: 24px 0;
     border-radius: 10px;
 }
-.main-img__home {
+.main-img__home, .main-img_page4 {
     background-color: #fff0f0;
 }
 .main-img_page2 {
@@ -71,6 +71,7 @@ main {
 .main-img_page3 {
     background-color: #d1fff9;
 }
+
 
 .container_hero {
     display: grid;
