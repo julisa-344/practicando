@@ -1,0 +1,167 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilos generales */
+
+a {
+    color: #000;
+    margin-bottom: 14px;
+}
+p {
+    font-size: 1.9rem;
+    line-height: 24px;
+}
+h2 {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 2.7rem;
+    line-height: 34px;
+}
+span,
+h1 {
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+
+/* dando estilos al header */
+
+header {
+    height: 120px;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff0f0;
+    border-bottom: 2px solid #000;
+    box-shadow: 4px 4px 6px 0px #e3d5d5;
+}
+nav a {
+    margin-left: 16px;
+}
+
+/* dando estilos al main */
+
+main {
+    padding: 28px 28px 0 28px;
+}
+
+.main-container {
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.main-container img {
+    margin: 24px 0;
+    border-radius: 10px;
+}
+.main-img__home {
+    background-color: #fff0f0;
+}
+.main-img_page2 {
+    background-color: #8f98ff;
+}
+.main-img_page3 {
+    background-color: #d1fff9;
+}
+
+.container_hero {
+    display: grid;
+    margin: 80px 0 56px 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 24px;
+}
+.container_hero img {
+    margin-bottom: 24px;
+}
+.container_hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container_hero .info-large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container_hero .info__large-all {
+    margin: 0 -28px;
+    padding: 0 28px;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: #e2d4ff;
+}
+.info__large-all div {
+    width: 252px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.container_hero .one {
+    background-color: #f6c0ff;
+}
+.container_hero .two {
+    background-color: #defffd;
+}
+.container_hero .three {
+    background-color: #f8ffa8;
+}
+
+.info p {
+    line-height: 153.5%;
+}
+
+/* botón */
+button {
+    width: 97px;
+    margin-top: 16px;
+    padding: 13px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+button:hover {
+    box-shadow: 4px 4px 6px 0px #e3d5d5;
+}
+button:active {
+    background-color: #ffe27b;
+}
+
+/* dando estilos al footer */
+
+footer {
+    display: flex;
+    padding-top: 50px;
+    margin: 40px 28px 28px 28px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #000;
+}
+footer p,
+a {
+    line-height: 142.5%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.container-social {
+    width: 214px;
+    margin: 20px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer div + p {
+    width: 165px;
+    line-height: 142.5%;
+}
