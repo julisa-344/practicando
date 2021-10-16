@@ -1,0 +1,96 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* estilos generales */
+nav .brand-logo, nav ul a, h2 {
+  color: #26a69a;
+}
+
+/* dando estilos al header */
+.navbar {
+  padding-top: 20px;
+  height: 100px;
+  background-color: #e0f2f1;
+  box-shadow: none;
+}
+
+/* about me */
+.hero-img {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/img/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hero-img h1 {
+  text-align: center;
+  color: #26a69a;
+  font-weight: bold;
+}
+.hero-img h4 {
+  width: 300px;
+  position: absolute;
+  padding: 10px;
+  bottom: 80px;
+  left: 40px;
+  color: #e0f2f1;
+}
+
+/* my skills  */
+
+.my-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+/* servicios */
+.servicios-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.servicios-container div {
+  display: grid;
+  place-items: center;
+  color: #26a69a;
+}
+
+/* portafolio */
+.portafolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* clientes */
+.clientes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+footer {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: #e0f2f1;
+}
