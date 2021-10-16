@@ -81,11 +81,13 @@ nav .brand-logo, nav ul a, h2 {
   justify-content: space-between;
 }
 
+/* formulario */
 textarea {
   width: 100%;
   height: 150px;
 }
 
+/* footer */
 footer {
   height: 120px;
   display: flex;
