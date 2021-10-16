@@ -6,7 +6,9 @@ body {
   flex-direction: column;
 }
 /* estilos generales */
-nav .brand-logo, nav ul a, h2 {
+nav .brand-logo,
+nav ul a,
+h2 {
   color: #26a69a;
 }
 
@@ -16,6 +18,10 @@ nav .brand-logo, nav ul a, h2 {
   height: 100px;
   background-color: #e0f2f1;
   box-shadow: none;
+}
+nav .sidenav-trigger i {
+  color: #26a69a;
+  font-size: 40px;
 }
 
 /* about me */
@@ -47,12 +53,13 @@ nav .brand-logo, nav ul a, h2 {
 
 /* my skills  */
 
-.my-skills-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
+.input-field.range-skills {
+  height: 75px;
+  display: flex;
 }
-
+input[type=range] {
+  border: none;
+}
 /* servicios */
 .servicios-container {
   display: grid;
@@ -68,17 +75,20 @@ nav .brand-logo, nav ul a, h2 {
 
 /* portafolio */
 .portafolio-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 20px 20px;
 }
 
 /* clientes */
 .clientes-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 20px 20px;
 }
 
 /* formulario */

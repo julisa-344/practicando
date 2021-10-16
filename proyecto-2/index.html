@@ -17,67 +17,87 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portafolio</title>
   </head>
-  <body class=" teal lighten-5">
+  <body class="teal lighten-5">
     <header>
       <nav class="container navbar">
-        <div class="nav-wrapper teal lighten-5 ">
-          <a href="#" class="brand-logo">Codigo by tecsup</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" class="brand-logo">Codigo by tecsup</a>
+        <a href="#" data-target="menu-responsive" class="sidenav-trigger right"
+          ><i class="material-icons">menu</i></a>
+
+        <ul class="right valign-wrapper hide-on-med-and-down">
             <li><a href="#about-me">About me</a></li>
             <li><a href="#my-skills">My skills</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
+        </ul>
+
+        <ul class="sidenav" id="menu-responsive">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#my-skills">My skills</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!-- about me -->
-      <section id="about-me" class="hero-img">
+      <section id="about-me" class="z-depth-2 hero-img">
         <h1>CodiGO</h1>
         <h4 class="card teal lighten-1">Hola, mi nombre es Julisa León</h4>
       </section>
 
       <!-- my skills -->
-      <section id="my-skills" class="section container">
+      <section id="my-skills" class="section container col s12 m6">
         <h2>My skills</h2>
-        <div class="my-skills-container section">
-          <div>
-            <label for="range">Html</label>
-            <input value="90" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">CSS</label>
-            <input value="90" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">JavaScript</label>
-            <input value="40" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">React</label>
-            <input value="20" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">Python</label>
-            <input value="50" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">Node.js</label>
-            <input value="60" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">Figma</label>
-            <input value="80" type="range" name="range" id="range" />
-          </div>
-          <div>
-            <label for="range">Angular</label>
-            <input value="10" type="range" name="range" id="range" />
+
+        <div class="row">
+          <div class="col s12">
+            <div class="row">
+              <section class="my-skills-container section">
+
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">Html</label>
+                    <input value="90" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">CSS</label>
+                    <input value="90" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">JavaScript</label>
+                    <input value="40" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">React</label>
+                    <input value="20" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">Python</label>
+                    <input value="50" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">Node.js</label>
+                    <input value="60" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">Figma</label>
+                    <input value="80" type="range" name="range" id="range" />
+                  </div>
+                  <div class="input-field col s12 m6 range-skills">
+                    <label for="range">Angular</label>
+                    <input value="10" type="range" name="range" id="range" />
+                  </div>
+
+              </section>
+            </div>
           </div>
         </div>
+
       </section>
 
       <!-- servicios -->
@@ -85,36 +105,29 @@
         <h2>Servicios</h2>
         <section class="servicios-container section">
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
           <div>
-            <i class="material-icons">check_circle
-            </i>
+            <i class="material-icons">check_circle </i>
             Diseño web
           </div>
-
         </section>
       </section>
 
@@ -138,9 +151,9 @@
         <h2>Clientes</h2>
         <div class="section clientes-container">
           <img src="./assets/img/image9.png" alt="img" />
-        <img src="./assets/img/image10.png" alt="img" />
-        <img src="./assets/img/image11.png" alt="img" />
-        <img src="./assets/img/image12.png" alt="img" />
+          <img src="./assets/img/image10.png" alt="img" />
+          <img src="./assets/img/image11.png" alt="img" />
+          <img src="./assets/img/image12.png" alt="img" />
         </div>
       </section>
 
@@ -169,10 +182,15 @@
                       <input id="numero" type="tel" maxlength="9" />
                       <label for="numero">Teléfono</label>
                     </div>
-                    <div class="input-field col m12">
-                      <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Descripción"></textarea>
+                    <div class="input-field col s12 m12">
+                      <textarea
+                        name="texto"
+                        id="texto"
+                        cols="30"
+                        rows="5"
+                        placeholder="Descripción"
+                      ></textarea>
                     </div>
-
                   </section>
                 </div>
 
@@ -191,8 +209,8 @@
           </div>
         </div>
       </section>
-
     </main>
+
     <footer class="teal lighten-1">
       <p>Todos los derechos reservados | 2021</p>
       <p>Desarrollado por codiGO</p>
