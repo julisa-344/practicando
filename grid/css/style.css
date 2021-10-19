@@ -50,6 +50,7 @@ header, footer {
     height: 100px;
     padding: 0 35px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #e5e5e5;
@@ -186,6 +187,13 @@ button {
 /* responsive */
 
 @media (max-width: 1090px){
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    ul {
+        width: 350px;
+    }
     .banner{
         grid-template-columns: auto;
         grid-template-rows: auto auto;
