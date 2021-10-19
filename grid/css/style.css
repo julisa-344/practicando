@@ -182,12 +182,23 @@ button {
     transform: scale(1.05);
     transition: transform 1s;
 }
+
+/* responsive */
+
 @media (max-width: 1090px){
     .banner{
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+    .card-container { 
+        width: 78%;
+    margin: 0 auto; 
+    }
+    .article-container{
+    margin-top: 450px;
     }
     .container-article  {
-        grid-template-columns: 393px;
+        grid-template-columns: auto;
     }
   }
