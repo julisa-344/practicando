@@ -2,7 +2,6 @@
 @import "./search";
 @import "./btn";
 @import "./card";
-@import "./navegar";
 //header
 header .logo {
   display: inline-block;
@@ -82,7 +81,15 @@ footer {
   }
 }
 //responsive, trabajando con mabile-first and
+@media (max-width:965px){
+  .navegar {
+    display: none;
+  }
+}
 @media (min-width: 966px) {
+  .navegar {
+    display: inline-block;
+  }
   .header__img {
     background-image: url("https://picsum.photos/900/180");
   }
@@ -95,6 +102,7 @@ footer {
     right: 13px;
     bottom: 13px;
   }
+  @import "./navegar";
 }
 @media (min-width: 1200px) {
   main {
