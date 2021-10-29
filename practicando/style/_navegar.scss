@@ -1,0 +1,29 @@
+.navegar {
+  width: 365px;
+  display: flex;
+  grid-column-start: 2;
+  margin: 32px 0 60px auto;
+
+  .box {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #b7bcce;
+    border-radius: 4px;
+  }
+  span {
+    @extend .box;
+    border: none;
+  }
+  & div:nth-child(2),
+  .box:active {
+    background-color: $secondary-color;
+    color: $light-color;
+  }
+  .box:hover {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
