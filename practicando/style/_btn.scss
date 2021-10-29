@@ -1,0 +1,23 @@
+.btn-search {
+  width: 104px;
+  height: 47px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  text-align: center;
+  vertical-align: center;
+  border: none;
+  background: $secondary-color;
+  border-radius: 4px;
+}
+
+.btn-article {
+  width: 63px;
+  height: 26px;
+  border: 1px solid $primery-color;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  color: $primery-color;
+  background-color: $light-color;
+}

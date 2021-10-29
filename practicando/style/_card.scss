@@ -1,0 +1,51 @@
+.card {
+  width: 90%;
+  min-height: 147px;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  background: $light-color;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  @include details($width);
+  &__info {
+    width: 50%;
+    min-width: 170px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    em {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-weight: normal;
+      font-size: 1.6rem;
+      padding: 8px 0 20px 0;
+    }
+  }
+  .card__info--details {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  img {
+    border-radius: 4px;
+    width: 90px;
+    height: 90px;
+    margin-right: 16px;
+  }
+}
+.dates {
+  display: flex;
+  place-items: center;
+  color: $grey-color;
+  font-weight: 500;
+  font-size: 1.2rem;
+  i {
+    padding-left: 7px;
+  }
+}
+

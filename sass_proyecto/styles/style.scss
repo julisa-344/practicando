@@ -1,0 +1,19 @@
+
+@import "globales.scss";
+@import "buton.scss";
+.card{
+    @include card; 
+    &__text {
+        padding: 32px 24px;
+        &__icons{
+            display: grid;
+            grid-template-columns: minmax(100px, max-content)
+                       repeat(auto-fill, 200px) 20%;
+        } 
+        & img{
+            background-color:$color-brand-red;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+}

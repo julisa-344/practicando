@@ -1,0 +1,51 @@
+//variables
+$primery-color:#334680;
+$secondary-color:#1E86FF;
+$grey-color:#B9BDCF;
+$light-color:#fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  font-weight: 700;
+font-size: 2.4rem;
+margin-bottom: 5px;
+}
+h3 {
+  margin: 32px 0 14px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: $grey-color;
+}
+p{
+
+font-size: 1.4rem;
+line-height: 24px;
+}
+label {
+  padding: 0 0 15px 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+input {
+  margin-right: 7px;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  font-family: 'Roboto', sans-serif;
+  color: $primery-color;
+  background-color: #f4f4fb;
+}
