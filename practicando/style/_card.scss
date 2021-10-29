@@ -8,9 +8,11 @@
   background: $light-color;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
-  @include details($width);
+  a {
+    color: $primery-color;
+  }
   &__info {
-    width: 50%;
+    width: auto;
     min-width: 170px;
     display: flex;
     flex-direction: column;
@@ -42,10 +44,8 @@
   display: flex;
   place-items: center;
   color: $grey-color;
-  font-weight: 500;
   font-size: 1.2rem;
   i {
     padding-left: 7px;
   }
 }
-

@@ -2,28 +2,28 @@
 @import "./search";
 @import "./btn";
 @import "./card";
-
+@import "./navegar";
 //header
 header .logo {
   display: inline-block;
   margin: 30px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
   color: #282538;
 }
 .header__img {
-  display: grid;
-  place-items: center;
   width: 100%;
   height: 180px;
-  margin-bottom: 30px;
+  display: grid;
+  place-items: center;
   position: relative;
+  margin-bottom: 30px;
+  border-radius: 8px;
   background-image: url("https://picsum.photos/350/180");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 8px;
 }
 
 //main
@@ -54,20 +54,20 @@ footer {
 //profile.html
 
 .back {
-
   color: $secondary-color;
-  font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-size: 1.4rem;
-a {
-  display: flex;
-  align-items: center;
-}
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  a {
+    display: flex;
+    align-items: center;
+  }
 }
 .about {
-  font-family: 'Poppins', sans-serif;
-font-weight: 500;
-margin-bottom: 36px;
+  width: 230px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 36px;
 }
 .profile-container {
   display: flex;
@@ -78,11 +78,14 @@ margin-bottom: 36px;
   }
   em {
     font-weight: bold;
-font-size: 18px;
+    font-size: 18px;
   }
 }
-
+//responsive, trabajando con mabile-first and
 @media (min-width: 966px) {
+  .header__img {
+    background-image: url("https://picsum.photos/900/180");
+  }
   .container-cards {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -96,11 +99,10 @@ font-size: 18px;
 @media (min-width: 1200px) {
   main {
     display: grid;
-grid-template-columns: 400px 1fr;
+    grid-template-columns: 400px 1fr;
   }
   .container-cards {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     column-gap: 20px;
   }
-
 }
