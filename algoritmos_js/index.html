@@ -1,24 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Algoritmos con js</h1>
-  <h2>Ingrese a la consola</h2>
-  <form action="" class="foro">
-    <h2 class="figuras__subtitulo--margin">Implementar un algoritmo que reciba 2 argumentos y los sume</h2>
-    <label for="suma">Escriba los números</label>
-    <input id="suma1">
-    <input id="suma2">
-    <button class="btn" type="button" onclick="sumaHtml()">
-        Calcular
-    </button>
-    <span class="resultado" id="suma_btn"></span>
-  </form>
-  <script src="./ejercicio1.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+      }
+      label {
+        font-size: 1.6rem;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #001f3f;
+        background: #59b4c0;
+      }
+      form {
+        width: 95%;
+        max-width: 800px;
+        padding: 20px;
+        margin: 57px auto;
+        border-radius: 20px;
+        box-shadow: 28px 28px 56px #2d5c62, -28px -28px 56px #85ffff;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.6rem;
+        margin: 4px 0px 15px 0;
+        outline: none;
+        border: 0;
+        border-radius: 10px;
+        background: #59b4c0;
+        box-shadow: 5px 5px 10px #448992, -5px -5px 10px #6edfee;
+      }
+      button {
+        padding: 10px;
+        margin: 15px 5px;
+        border: 0;
+        font-size: 1.6rem;
+        border-radius: 10px;
+        color: #001f3f;
+        background: #59b4c0;
+        box-shadow: inset 5px 5px 10px #448992, inset -5px -5px 10px #6edfee;
+      }
+      button:hover {
+        box-shadow: 5px 5px 10px #448992, -5px -5px 10px #6edfee;
+      }
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        border-bottom: 2px solid #001f3f;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Algoritmos con js</h1>
+    <form action="" class="foro">
+      <h2 class="figuras__subtitulo--margin">
+        Implementar un algoritmo que reciba 2 argumentos y los sume
+      </h2>
+      <label for="suma">Escriba los números</label><br />
+      <input id="suma1" /><br />
+      <input id="suma2" /><br />
+      <button class="btn" type="button" onclick="sumaHtml()">Sumar</button
+      ><br />
+      <span class="resultado" id="suma_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2 class="figuras__subtitulo--margin">
+        Registrar el ingreso de notas de 4 examenes y calcular el promedio de estos.
+      </h2>
+      <label for="promedio">Escriba las notas</label><br />
+      <input id="nota1" /><br />
+      <input id="nota2" /><br />
+      <input id="nota1" /><br />
+      <input id="nota2" /><br />
+      <button class="btn" type="button" onclick="promedioHtml()">Calcular</button
+      ><br />
+      <span class="resultado" id="promedio_btn"></span>
+    </form>
+    <script src="./ejercicio1.js"></script>
+  </body>
 </html>

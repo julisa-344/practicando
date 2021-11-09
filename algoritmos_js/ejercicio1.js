@@ -14,21 +14,25 @@ function sumaHtml(){
 }
 /* --------- 2  --------- */
 function calcularPromedioExamenes(notas) {
-  const sumaNotas = Notas.reduce(function (sumandoNotas = 0, nuevoElemento) {
+  const sumaNotas = notas.reduce(function (sumandoNotas = 0, nuevoElemento) {
     return sumandoNotas + nuevoElemento;
   });
   return sumaNotas / notas.length;
 }
 //interactuando con el html
-function calcularPromedioExamenesHtml(){
-  const input1 = document.getElementById("suma1")
+function promedioHtml(){
+  const input1 = document.getElementById("nota1")
   const value1 = parseInt(input1.value)
-  const input2 = document.getElementById("suma2")
+  const input2 = document.getElementById("nota2")
   const value2 = parseInt(input2.value)
+  const input3 = document.getElementById("nota1")
+  const value3 = parseInt(input3.value)
+  const input4 = document.getElementById("nota2")
+  const value4 = parseInt(input4.value)
 
-  const sumar = suma(value1, value2);
-  document.getElementById("suma_btn").innerHTML=sumar
-}
+  const promedio = calcularPromedioExamenes([value1, value2, value3, value4]);
+  document.getElementById("promedio_btn").innerHTML=`El promedio es: ${promedio
+}`
 /* --------- 3  --------- */
 function areaRectangulo(base, altura) {
   return base * altura;
@@ -90,9 +94,9 @@ function salarioPorAno(){
 /* --------- 15  --------- */
 function verificarEdad (edad){
   if(edad >= 13){
-    return 'Usted puede votar las siguientes elecciones.'
+    return 'Usted puede votar en las siguientes elecciones.'
   } else {
-    return 'Lo siento, no cumple con el requisito de la edad.'
+    return 'Lo siento usted no puede votar en las siguientes elecciones, porque no cumple con el requisito de la edad.'
   }
 }
 
