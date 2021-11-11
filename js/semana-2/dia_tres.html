@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>TÍTULO PRINCIPAL</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut accusamus tempore. Facilis illo labore excepturi esse beatae dolorem repudiandae nemo, blanditiis necessitatibus quidem molestias provident, tenetur molestiae amet. Hic.</p>
+  <button>Botón</button>
+
+  <script>
+    const h1 = document.querySelector('h1')
+    const button = Document.querySelector('button')
+
+    button.onclick = function(){
+      console.log('this.textContent', this.textContent)
+      if(this.textContent == 'Presionado'){
+        this.textContent = 'Sin presionar';
+        h1.style.border = ''
+      } else {
+        this.textContent = 'Presionado';
+        h1.style.border = '10px solid black'
+      }
+      this.classList = 'Presionado'
+      h1.style
+    }
+  </script>
+</body>
+</html>

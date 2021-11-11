@@ -47,10 +47,14 @@
         font-size: 1.6rem;
         margin: 4px 0px 15px 0;
         outline: none;
+
         border: 0;
         border-radius: 10px;
         background: #59b4c0;
         box-shadow: 5px 5px 10px #448992, -5px -5px 10px #6edfee;
+      }
+      input::placeholder {
+        color: #2b3c4d;
       }
       button {
         padding: 10px;
@@ -91,16 +95,223 @@
 
     <form action="" class="foro">
       <h2 class="figuras__subtitulo--margin">
-        Registrar el ingreso de notas de 4 examenes y calcular el promedio de estos.
+        Registrar el ingreso de notas de 4 examenes y calcular el promedio de
+        estos.
       </h2>
       <label for="promedio">Escriba las notas</label><br />
       <input id="nota1" /><br />
       <input id="nota2" /><br />
       <input id="nota1" /><br />
       <input id="nota2" /><br />
-      <button class="btn" type="button" onclick="promedioHtml()">Calcular</button
+      <button class="btn" type="button" onclick="promedioHtml()">
+        Calcular</button
       ><br />
       <span class="resultado" id="promedio_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>Calcular el área de un rectángulo</h2>
+      <label for="">Cuanto mide la base del rectángulo:</label><br />
+      <input id="base1" /><br />
+      <label for="">Cuanto mide la altura del rectángulo:</label><br />
+      <input id="altura2" /><br />
+      <button class="btn" type="button" onclick="areaRectanguloHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="areaRectangulo_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>Calcular el área de un triángulo</h2>
+      <label for="">Cuanto mide la base del triángulo:</label><br />
+      <input id="baset1" /><br />
+      <label for="">Cuanto mide la altura del triángulo:</label><br />
+      <input id="alturat2" /><br />
+      <button class="btn" type="button" onclick="areaTrianguloHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="areaTriangulo_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>Calcular el área de una circunferencia</h2>
+      <label for="">Cuanto mide el radio del círculo:</label><br />
+      <input id="radio" /><br />
+
+      <button class="btn" type="button" onclick="areaCirculoHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="areaCirculo_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Determinar el sueldo semanal de un trabajador basándose en sus horas
+        trabajadas y su salario de hora hombre
+      </h2>
+      <label for="">¿Cuántas horas trabaja al día ?</label><br />
+      <input id="horasTrabajo" /><br />
+      <label for="">¿Cuánto es el pago por hora ?</label><br />
+      <input id="pagoHora" /><br />
+      <label for="">¿Cuántos días trabaja a la semana ?</label><br />
+      <input id="diasPorSemana" /><br />
+      <button class="btn" type="button" onclick="salarioSemanalHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="salarioSemanal_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Una modista, para realizar sus prendas de vestir, encarga las telas al
+        extranjero. Para cada pedido, tiene que proporcionar las medidas de la
+        tela en pulgadas, pero ella generalmente las tiene en metros. Realice un
+        algoritmo para ayudar a resolver el problema, determinando cuantas
+        pulgadas debe pedir con base en los metros que requiere. (1 pulgada =
+        0.0254 m).
+      </h2>
+      <label for="">¿Cuántos metros de tela requiere ?</label><br />
+      <input id="metros" /><br />
+      <button class="btn" type="button" onclick="metrosApulgadaslHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="metrosApulgadas_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Una empresa importadora desea determinar cuántos dólares puede adquirir
+        con equis cantidad de dinero peruano.
+      </h2>
+      <label for="">¿Ingrese la cantidad en soles?</label><br />
+      <input id="soles" /><br />
+      <button class="btn" type="button" onclick="solesAdolaresHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="solesAdolares_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Una empresa que contrata personal requiere determinar la edad de las
+        personas que solicitan trabajo, pero cuando se les realiza la entrevista
+        sólo se les pregunta el año en que nacieron
+      </h2>
+      <label for="">¿En que año nació?</label><br />
+      <input id="anoNacio" /><br />
+      <button class="btn" type="button" onclick="calcularEdadHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="calcularEdad_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Se tiene el nombre y la edad de tres personas. Se desean saber el nombre
+        y la edad de la persona de menor edad.
+      </h2>
+      <label for="">¿Cuál es su edad?</label><br />
+      <input id="edad1" /><br />
+
+      <label for="">¿Cuál es su edad?</label><br />
+      <input id="edad2" /><br />
+
+      <label for="">¿Cuál es su edad?</label><br />
+      <input id="edad3" /><br />
+      <button class="btn" type="button" onclick="calcularMenorHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="calcularMenor_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Se les dará un bono por antigüedad a los empleados de una tienda. Si
+        tienen un año, se les dará $100; si tienen 2 años, $200, y así
+        sucesivamente hasta los 5 años. Para los que tengan más de 5, el bono
+        será de $1000. Realice un algoritmo y represéntelo ,que permita
+        determinar el bono que recibirá un trabajador
+      </h2>
+      <label for="">¿Cuántos años lleva lavorando para la empresa?</label><br />
+      <input id="anosLaborando" /><br />
+      <button class="btn" type="button" onclick="darBonoHtml()">Calcular</button
+      ><br />
+      <span class="resultado" id="darBono_btn"></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Un profesor tiene un salario inicial de $1500, y recibe un incremento de
+        10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué
+        salario ha recibido en cada uno de los 6 años? Realice el algoritmo y
+        representan la solución, utilizando el ciclo apropiado.
+      </h2>
+      <label for="">El salario que reció durante los 6 años fue de:</label
+      ><br />
+      <input
+        id="salarioProfe"
+        placeholder="Abrir la consola(F12) y presionar calcular"
+      /><br />
+      <button class="btn" type="button" onclick=" salarioPorAno()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id=""></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Realice un algoritmo para leer las calificaciones de N alumnos y
+        determine el número de aprobados y reprobados.
+      </h2>
+      <label for="">Ingrese el número de alumnos</label><br />
+      <input
+        id="totalAlumnos"
+        placeholder="Abrir la consola(F12) y presionar calcular"
+      /><br />
+
+      <button class="btn" type="button" onclick=" aprobadosDesaprobadosHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id=""></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se
+        desea contabilizar, de un lote de N focos(matrices), el número de focos
+        de cada color que hay en existencia.
+      </h2>
+      <label for="">
+        <b>Para selccionar el color <br /></b>
+        Verde = 1 <br />
+        Blanco = 2 <br />
+        Rojo = 3 <br />
+      </label><br />
+      <input
+        id="totalAlumnos"
+        placeholder="Abrir la consola(F12) y presionar calcular"
+      /><br />
+
+      <button class="btn" type="button" onclick=" focosHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id=""></span>
+    </form>
+
+    <form action="" class="foro">
+      <h2>
+        Realice un algoritmo para determinar si una persona puede votar con base
+        en su edad en las próximas elecciones.
+      </h2>
+      <label for="">Ingrese su edad.</label><br />
+      <input
+        id="edadVotacion"
+      /><br />
+
+      <button class="btn" type="button" onclick=" verificarEdadHtml()">
+        Calcular</button
+      ><br />
+      <span class="resultado" id="edadVotacion_btn"></span>
     </form>
     <script src="./ejercicio1.js"></script>
   </body>
